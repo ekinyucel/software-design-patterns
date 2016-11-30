@@ -1,0 +1,3 @@
+Factory Pattern ---
+" Define an inteface for creating an object, but let subclasses decide which class to instantinate . Factory Method lets a class
+defer instantion to subclasses."

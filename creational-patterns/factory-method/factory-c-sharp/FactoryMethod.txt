@@ -1,0 +1,7 @@
+﻿Product			 => function
+Concrete Product => Alarm, SmartAlarm, PetCotnrol, SteelDoor, VoiceRecognition
+Creator			 => House
+Concrete Creator => NormalHouse, SmartHouse
+
+Add functions to the List<Function> for every concrete creator (house)
+Then in the main program we get these functions and write their names to the console screen
