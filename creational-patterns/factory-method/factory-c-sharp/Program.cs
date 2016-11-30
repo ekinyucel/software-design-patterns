@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using factory_c_sharp.creator;
 
 namespace factory_c_sharp
 {
@@ -10,6 +7,20 @@ namespace factory_c_sharp
     {
         static void Main(string[] args)
         {
+            var houses = new House[2];
+            houses[0] = new NormalHouse();
+            houses[1] = new SmartHouse();
+
+            foreach (var house in houses)
+            {
+                Console.WriteLine("\n" + house.GetType().Name + "--");
+                foreach (var function in house.Functions)
+                {
+                    Console.WriteLine(" " + function.GetType().Name);
+                }
+            }
+
+            Console.ReadKey();
         }
     }
 }
