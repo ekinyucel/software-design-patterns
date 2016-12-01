@@ -11,6 +11,10 @@ namespace abstract_factory_c_sharp
             var client = new Client(samsung);
             client.CreateTelephone("Galaxy S5");
 
+            TechFactory asus = new AsusFactory();
+            var client2 = new Client(asus);
+            client2.CreateLaptop("ASUS UX390UA");
+
             Console.ReadKey();
         }
     }

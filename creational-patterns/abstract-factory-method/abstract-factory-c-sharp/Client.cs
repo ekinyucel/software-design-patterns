@@ -5,20 +5,21 @@ namespace abstract_factory_c_sharp
 {
     class Client
     {
-        private TechFactory _techFactory;
-        private Telephone _telephone;
-        private Laptop _laptop;
+        private readonly TechFactory _techFactory;
 
         public Client(TechFactory techFactory)
         {
-            //_telephone = techFactory.CreateTelephone();
-            //_laptop = techFactory.CreateLaptop();
             _techFactory = techFactory;
         }
 
-        public void CreateTelephone(string type)
+        public void CreateTelephone(string model)
         {
-            _techFactory.CreateTelephone(type);
+            _techFactory.CreateTelephone(model);
+        }
+
+        public void CreateLaptop(string model)
+        {
+            _techFactory.CreateLaptop(model);
         }
     }
 }
