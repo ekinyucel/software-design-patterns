@@ -3,23 +3,25 @@ using abstract_factory_c_sharp.product;
 
 namespace abstract_factory_c_sharp
 {
-    class Client
+    public class Client<T> where T : ITechFactory, new()
     {
-        private readonly TechFactory _techFactory;
+        private ITelephone _telephone;
+        private ILaptop _laptop;
+        private readonly T _factory;
 
-        public Client(TechFactory techFactory)
+        public Client()
         {
-            _techFactory = techFactory;
+            _factory = new T();
         }
 
         public void CreateTelephone(string model)
         {
-            _techFactory.CreateTelephone(model);
+            _telephone = _factory.CreateTelephone(model);
         }
 
         public void CreateLaptop(string model)
         {
-            _techFactory.CreateLaptop(model);
+            _laptop = _factory.CreateLaptop(model);
         }
     }
 }

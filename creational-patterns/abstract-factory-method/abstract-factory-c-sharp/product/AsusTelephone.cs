@@ -1,8 +1,16 @@
 ﻿/* Product */
 
+using System;
+
 namespace abstract_factory_c_sharp.product
 {
-    class AsusTelephone : Telephone
+    class AsusTelephone : ITelephone
     {
+        public void Create()
+        {
+            Console.WriteLine($"Asus {Model} laptop has been created");
+        }
+
+        public string Model { get; set; }
     }
 }

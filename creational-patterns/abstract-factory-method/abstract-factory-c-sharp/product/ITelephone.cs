@@ -2,7 +2,9 @@
 
 namespace abstract_factory_c_sharp.product
 {
-    public abstract class Telephone
+    public interface ITelephone
     {
+        void Create();
+        string Model { get; set; }
     }
 }

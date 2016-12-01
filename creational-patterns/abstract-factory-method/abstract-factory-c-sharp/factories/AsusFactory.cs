@@ -5,18 +5,20 @@ using abstract_factory_c_sharp.product;
 
 namespace abstract_factory_c_sharp.factories
 {
-    public class AsusFactory : TechFactory
+    public class AsusFactory : ITechFactory
     {
-        public override Telephone CreateTelephone(string model)
+        public ITelephone CreateTelephone(string model)
         {
-            Console.WriteLine("Asus {0} has been created", model);
-            return new AsusTelephone();
+            var telephone = new AsusTelephone {Model = model};
+            telephone.Create();
+            return telephone;
         }
 
-        public override Laptop CreateLaptop(string model)
+        public ILaptop CreateLaptop(string model)
         {
-            Console.WriteLine("Asus {0} Laptop has been created", model);
-            return new AsusLaptop();
+            var laptop = new AsusLaptop {Model = model};
+            laptop.Create();
+            return laptop;
         }
     }
 }

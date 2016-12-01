@@ -2,7 +2,9 @@
 
 namespace abstract_factory_c_sharp.product
 {
-    public abstract class Laptop
+    public interface ILaptop
     {
+        void Create();
+        string Model { get; set; }
     }
 }

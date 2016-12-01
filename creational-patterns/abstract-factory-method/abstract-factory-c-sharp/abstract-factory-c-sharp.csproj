@@ -49,10 +49,10 @@
     <Compile Include="factories\TechFactory.cs" />
     <Compile Include="product\AsusLaptop.cs" />
     <Compile Include="product\AsusTelephone.cs" />
-    <Compile Include="product\Laptop.cs" />
+    <Compile Include="product\ILaptop.cs" />
     <Compile Include="product\SamsungLaptop.cs" />
     <Compile Include="product\SamsungTelephone.cs" />
-    <Compile Include="product\Telephone.cs" />
+    <Compile Include="product\ITelephone.cs" />
     <Compile Include="MainApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
