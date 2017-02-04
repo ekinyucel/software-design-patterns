@@ -5,7 +5,7 @@
     /// </summary> 
     public class ProductA : Product
     {
-        public ProductA(double price) : base(price)
+        public ProductA(string symbol, double price) : base(symbol, price)
         {
         }
     }
