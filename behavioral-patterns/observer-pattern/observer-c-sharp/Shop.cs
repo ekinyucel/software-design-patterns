@@ -8,7 +8,6 @@ namespace observer_c_sharp
     public class Shop : IShop
     {
         private string _name;
-        private Product _product;
 
         public Shop(string name)
         {
@@ -17,13 +16,9 @@ namespace observer_c_sharp
 
         public void Update(Product product)
         {
-            Console.WriteLine($"Notified {_name} of {_product.Symbol}'s " + $"change to {_product.Price:C}");
+            Console.WriteLine($"Notified {_name} of {product.Symbol}'s " + $"price change to {product.Price}$");
         }
 
-        public Product Product
-        {
-            get { return _product;  }
-            set { _product = value; }
-        }
+        public Product Product { get; set; }
     }
 }
