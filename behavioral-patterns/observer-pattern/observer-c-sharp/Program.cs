@@ -24,6 +24,8 @@ namespace observer_c_sharp
             producta.Price = 145.0;
             producta.Price = 140.5;
             productb.Price = 25.0;
+            productb.Detach(butchery);
+            productb.Price = 30;
 
             Console.ReadKey();
         }
