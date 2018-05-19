@@ -1,5 +1,5 @@
 # software-design-patterns
-Software design patterns with C# and other languages
+Software design patterns with JAVA and other languages.
 
 ## Creational Patterns
 - Factory Method (C#)
@@ -9,4 +9,4 @@ Software design patterns with C# and other languages
 - Adapter Pattern (C#)
 
 ## Behavioral Patterns
-- Observer Pattern (C#)
+- Observer Pattern (JAVA - C#)
